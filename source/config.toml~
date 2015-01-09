@@ -1,0 +1,10 @@
++++
+baseurl = "http://danylaksono.com"
+languageCode = "en-us"
+title = "Geospatialthingy"
+categories = [
+  "Lecture",
+  "Blog",
+  "Tutorial"
+]
++++

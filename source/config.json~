@@ -1,0 +1,24 @@
+{
+    "contentdir": "content",
+    "layoutdir": "layouts",
+    "publishdir": "public",
+
+    "builddrafts": false,
+    
+    "disqusShortname": "danylaksono",
+
+    "baseurl": "danylaksono.com",
+    "canonifyurls": true,
+    "permalinks": {
+        "post": ":year/:month/:day/:title/",
+        "lectures": ":section/:title/",
+        "fixed": ":title/"
+    },
+
+    "params": {
+        "Title": "danylaksono.com",
+        "Tagline": "Geospatials and stuff",
+        "Author": "Dany Laksono",
+        "DateForm": "Jan 2, 2006 at 3:04pm"
+    }
+}
