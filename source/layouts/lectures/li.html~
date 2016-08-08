@@ -6,6 +6,4 @@
   {{ .Content }}
 </div>
 
-{{ template "_internal/disqus.html" . }}
-
 {{ partial "default_foot.html" . }}

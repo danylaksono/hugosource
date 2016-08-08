@@ -7,7 +7,7 @@
     
     "disqusShortname": "danylaksono",
 
-    "baseurl": "/",
+    "baseURL": "/",
     "canonifyurls": true,
     "permalinks": {
         "post": ":year/:month/:day/:title/",

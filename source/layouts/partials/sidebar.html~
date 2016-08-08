@@ -9,9 +9,9 @@
   </div>
 
   <nav class="sidebar-nav">
-    <a class="sidebar-nav-item {{ if eq .Url "/" }} active {{ end }}" href="/">Home</a>
-    <a class="sidebar-nav-item {{ if eq .Url "post" }} active {{ end }}" href="/post">Archives</a>
-    <a class="sidebar-nav-item {{ if eq .Url "lectures" }} active {{ end }}" href="/lectures">Lectures</a>
+    <a class="sidebar-nav-item {{ if eq .URL "/" }} active {{ end }}" href="/">Home</a>
+    <a class="sidebar-nav-item {{ if eq .URL "post" }} active {{ end }}" href="/post">Archives</a>
+    <a class="sidebar-nav-item {{ if eq .URL "lectures" }} active {{ end }}" href="/lectures">Lectures</a>
 
     {{ $thisperma := .Permalink }}
     {{ range .Site.Recent.ByWeight }}
@@ -21,13 +21,13 @@
     {{ end }}
 
     <!-- I (dany) don't really need this 
-    <a class="sidebar-nav-item" href="{{ .Site.Params.Github.Url }}/archive/{{ .Site.Params.Github.Head }}.zip">Download</a>
-    <a class="sidebar-nav-item" href="{{ .Site.Params.Github.Url }}">GitHub project</a>
+    <a class="sidebar-nav-item" href="{{ .Site.Params.Github.URL }}/archive/{{ .Site.Params.Github.Head }}.zip">Download</a>
+    <a class="sidebar-nav-item" href="{{ .Site.Params.Github.URL }}">GitHub project</a>
     <span class="sidebar-nav-item">Currently on {{ .Site.Params.Github.Head }}</span> 
      -->
   </nav>
 
   <div class="sidebar-item">
-    <p>&copy; {{ .Site.LastChange.Year }}. Visit <a href="https://github.com/danylaksono" target="_blank">my github page</a> for more.</p>
+    <p>&copy; {{ .Site.LastChange.Year }}. Visit my <a href="https://github.com/danylaksono" target="_blank">github page</a> for more.</p>
   </div>
 </div>
